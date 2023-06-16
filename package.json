@@ -4,7 +4,7 @@
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "strapi-listview-copyable",
-    "description": "Description of strapi-listview-copyable plugin",
+    "description": "Listview Copy Action",
     "kind": "plugin"
   },
   "dependencies": {

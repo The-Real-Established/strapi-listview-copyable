@@ -3,7 +3,8 @@ import { injectCopyActionColumns } from "./components/injectCopyActionColumns";
 import * as pluginPkg from "../../package.json";
 import { StrapiAdminInstance } from 'strapi-typed'
 import Initializer from "./components/Initializer";
-export const pluginId = pluginPkg.strapi.name.replace(/^strapi-plugin-/i, "");
+import pluginId from "./pluginId";
+const name = pluginPkg.strapi.name;
 
 export default {
 	register(app: StrapiAdminInstance) {
@@ -11,7 +12,7 @@ export default {
 			id: pluginId,
 			isReady: false,
 			initializer: Initializer,
-			name: pluginPkg.strapi.name,
+			name
 		});
 	},
 	bootstrap(app: any) {
