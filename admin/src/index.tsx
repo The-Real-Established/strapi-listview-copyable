@@ -1,6 +1,6 @@
 const { INJECT_COLUMN_IN_TABLE } = require("@strapi/admin/admin/src/exposedHooks")
 import { injectCopyActionColumns } from "./components/injectCopyActionColumns";
-import * as pluginPkg from "../../package.json";
+import pluginPkg from "../../package.json";
 import { StrapiAdminInstance } from 'strapi-typed'
 import Initializer from "./components/Initializer";
 import pluginId from "./pluginId";
