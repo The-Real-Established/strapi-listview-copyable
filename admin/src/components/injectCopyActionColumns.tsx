@@ -46,7 +46,7 @@ export const injectCopyActionColumns = (props: any) => {
 		return schema;
 	};
 
-	const atualDispleayedHeaders = displayedHeaders.map((header: any) => {
+	const actualDisplayedHeaders = displayedHeaders.map((header: any) => {
 		if (layout.contentType.attributes[header.name].copyable) {
 			return injectCopyComponent(header);
 		}
@@ -54,7 +54,7 @@ export const injectCopyActionColumns = (props: any) => {
 	});
 
 	return {
-		displayedHeaders: atualDispleayedHeaders,
+		displayedHeaders: actualDisplayedHeaders,
 		layout
 	};
 };
